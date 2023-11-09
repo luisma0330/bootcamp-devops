@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 8080, host: 1234 #alternative port
   config.vm.network "forwarded_port", guest: 8000, host: 1256 #alternative port
   config.vm.network "forwarded_port", guest: 3306, host: 1260 #mysql
-  config.vm.hostname = "bootcamp"
+  config.vm.hostname = "lojeda"
   config.vm.synced_folder ".", "/syncd", disabled: false
   config.vm.disk :disk, size: "50GB", primary: true
   config.vm.provider "virtualbox" do |vb|
