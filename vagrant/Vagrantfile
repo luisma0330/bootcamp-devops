@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
      vb.memory = "2048"
      vb.cpus = "2"
-     vb.name = "295devops"#nombre
+     vb.name = "devops"#nombre
   end
 
   config.vm.provision "shell", inline: <<-SHELL
