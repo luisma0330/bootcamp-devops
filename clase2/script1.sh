@@ -25,7 +25,7 @@ else
     git clone -b devops-mariobros https://github.com/roxsross/$REPO.git
 fi
 
-echo "instalando web"
+echo "===instalando web==="
 sleep 1
 
 cp -r $REPO/* /var/www/html
