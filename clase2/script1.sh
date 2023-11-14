@@ -18,6 +18,15 @@ else
     systemctl enable apache2
 fi
 
+if dpkg apache2 > /dev/null 2>&1; then
+    echo -e "\n\e[96mApache2 esta realmente instalado \003[0m\n"
+else
+    echo -e "\n\e[96mInstalando Apache2 ... \003[0m\n"
+    apt install -y git apache2
+    systemctl start apache2
+    systemctl enable apache2
+fi
+
 if [ -d "$REPO" ] ;
 then
     echo "la carpeta $REPO ya exite"
